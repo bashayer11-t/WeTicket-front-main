@@ -1,0 +1,117 @@
+/* Category.module.css */
+.form-container {
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+    padding: 20px;;
+    background-color: transparent; /* ليعتمد على خلفية الـ AdminLayout الرمادية */
+}
+
+.page-wrapper {
+    width: 100%;
+    display:block;
+    justify-content: center;
+    padding: 20px;
+    background-color: transparent; /* ليعتمد على خلفية الـ AdminLayout الرمادية */
+    box-sizing: border-box;
+
+}
+
+/* تلوين العنوان باللون الموف المعتمد */
+.customTitle {
+    color: var(--primary-color) !important;
+    font-weight: 600 !important;
+    font-size: 1.25rem !important;
+}
+
+.add-event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.inputGroup {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.label {
+    color: #5b3e81; 
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-right: 15px;
+}
+
+/* تقسيم الصف ليحتوي على حقلين (النوع والحالة) بجانب بعضهما */
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 0px;
+}
+
+.buttonWrapper {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn {
+    background-color: #5b3e81;
+    color: white;
+    padding: 10px 60px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.submitBtn:hover {
+    transform: scale(1.05);
+}
+
+
+
+/* تكبير البطاقة البيضاء لتتناسب مع التصميم الموحد */
+:global(.form-card) {
+    max-width: 100% !important; 
+    width: 100% !important;
+    margin: 0 auto !important; /* لتوسيط البطاقة داخل الصفحة */
+}
+
+/* تنسيق القوائم المنسدلة (النوع والحالة) */
+.page-wrapper select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    
+    /* السهم الموف */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%235b3e81' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: left 25px center !important; 
+    
+    /* التعديلات الجديدة هنا */
+    width: 100%;
+    height: 48px;
+    border-radius: 30px;
+    
+    /* 1. جعل الحدود خفيفة جداً لتطابق حقل اسم التصنيف */
+    border: 1px solid rgba(0, 0, 0, 0.05) !important; 
+    
+    /* 2. إزاحة الكلمات (ترفيه/نشط) للداخل من جهة اليمين */
+    padding-right: 25px !important; 
+    /* تأمين مساحة السهم من اليسار */
+    padding-left: 45px !important; 
+
+    background-color: #ffffff;
+    box-shadow: inset -2px -2px 8px #f0f0f0, inset 2px 2px 8px #ffffff;
+    color: #5b3e81;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+

@@ -1,0 +1,110 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(63, 62, 62, 0.05);
+  direction: rtl; /* لضمان الترتيب من اليمين لليسار */
+  border-radius: 0 0 30px 30px; 
+
+}
+
+.logoImg {
+  height: 40px; /* يمكنك تعديل المقاس حسب الرغبة */
+  cursor: pointer;
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #5b3e81; /* اللون البنفسجي من تصميمك */
+  font-weight: 500;
+  font-size: larger;
+
+}
+
+.navLinks a.active {
+  border-bottom: 2px solid #5b3e81;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  
+}
+
+.loginBtn {
+  background-color: #5b3e81;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  color: #777;
+  font-size: 0.9rem;
+  
+  /* الإضافات للتخلص من المربع البارز */
+  background: transparent !important; 
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.dashboardBtn {
+  background-color: #6c5ce7; /* لون مميز للأدمن */
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logoutBtn {
+  background-color: #ff7675; /* لون أحمر للخروج */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logoutBtnCustom {
+    background-color: #ff7675 !important; /* اللون الأحمر للخروج */
+    min-height: 40px !important; /* تقليل الارتفاع قليلاً ليناسب الهيدر */
+    padding: 5px 20px !important;
+}
+
+.dashboardBtn {
+    /* التنسيق الذي أرفقتيه سيعمل بشكل مثالي هنا */
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px; /* جعلته متناسقاً مع بقية الأزرار */
+    cursor: pointer;
+}
+
+
+

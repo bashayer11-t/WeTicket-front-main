@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    min-height: 80vh;
+    direction: rtl;
+    padding: 40px;
+    gap: 30px;
+    background-color: transparent;
+}
+
+.sidebar {
+    width: 280px;
+    background-color: #ffffff;
+    border-radius: 30px; /* تطابق مع البوكينج */
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: fit-content;
+}
+
+.sidebar h3 {
+    color: #5b3e81; /* اللون الموحد */
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding-right: 10px;
+}
+
+.tabBtn {
+    padding: 12px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    text-align: right;
+    border-radius: 25px; /* دائرية مثل submitBtn */
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #5b3e81;
+    transition: all 0.3s ease;
+}
+
+.activeTab {
+    background-color: #5b3e81 !important;
+    color: white !important;
+    box-shadow: 0 4px 10px rgba(91, 62, 129, 0.2);
+}
+
+.content {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.content h2 {
+    color: #5b3e81;
+    font-weight: 600;
+    margin-bottom: 30px;
+    font-size: 1.25rem;
+}
+
+.profileForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: right;
+}
+
+.label {
+    color: #5b3e81;
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-right: 15px;
+}
+
+.inputGroup input {
+    width: 100%;
+    height: 44px;
+    border-radius: 30px; /* دائرية بالكامل */
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0 20px;
+    color: #5b3e81;
+    outline: none;
+    background-color: #ffffff;
+    box-shadow: inset -1px -1px 5px #f9f9f9;
+}
+
+.readOnlyInput {
+    background-color: #fcfaff !important;
+    cursor: not-allowed;
+    border: 1px dashed rgba(91, 62, 129, 0.2) !important;
+}
+
+.submitBtn {
+    background-color: #5b3e81;
+    color: white;
+    padding: 10px 60px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+    width: fit-content;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.submitBtn:hover {
+    transform: scale(1.05);
+    background-color: #4a3269;
+}

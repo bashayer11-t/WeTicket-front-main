@@ -1,0 +1,27 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: var(--background-color);
+}
+
+.header-section h2 {
+    color: #5b3e81; /* --primary-color */
+    margin-bottom: 5px;
+}
+
+.header-section p {
+    color: #6b7280; /* لون نص فرعي */
+    font-size: 0.9rem;
+}
+
+/* بطاقة الرسم البياني بتنسيق احترافي */
+.chart-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 25px;
+    /* تأثير ظل ناعم يتناسب مع خلفية النظام f3f4f6 */
+    box-shadow: 8px 8px 16px #e2e3e5, 
+                -8px -8px 16px #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}

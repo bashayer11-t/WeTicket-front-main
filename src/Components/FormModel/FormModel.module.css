@@ -1,0 +1,45 @@
+.form-container {
+  background-color: #f2f3f1; 
+  height: 100vh;
+  display:block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-card {
+  background: #ffffff;
+  padding: 20px ;
+  border-radius: 50px; 
+  box-shadow: 20px 20px 60px #ced0cd, -20px -20px 60px #ffffff;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.form-title {
+  color: #555d4d;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.form-subtitle {
+  padding: 5px 25px;
+  border-radius: 20px;
+  color: #555d4d;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: .80rem;
+}
+
+/* ØªÙ†Ø³ÙŠÙ‚ Ø£ÙŠ ÙÙ‚Ø±Ø© Ù†ØµÙŠØ© Ø¯Ø§Ø®Ù„ Ø§Ù„Ù€ Model */
+.form-card p {
+  padding: 5px 25px;
+  border-radius: 20px;
+  color: #555d4d;
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: .80rem;
+}

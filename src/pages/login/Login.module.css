@@ -1,0 +1,97 @@
+.loginPage {
+  display: flex;
+  justify-content: center; /* توسيط الكارد عرضياً */
+  align-items: center;     /* توسيط الكارد طولياً */
+  min-height: 100vh;
+  direction: rtl;
+}
+
+/* الحاوية الرئيسية (الكارد) */
+.loginCard {
+  display: flex;
+  width: 900px; /* عرض ثابت للكارد */
+  height: 550px; /* طول ثابت للكارد */
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden; /* لضمان أن الصورة تأخذ انحناء الزوايا */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* القسم الأيمن: الصورة */
+.imageSection {
+  flex: 1.1; /* جعل قسم الصورة أكبر قليلاً */
+  height: 100%;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* القسم الأيسر: الفورم */
+.formSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.title {
+  color: #5b3e81;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* هذا السطر يضمن توسيط الزر وأي عنصر داخله */
+  gap: 15px;
+  width: 100%;
+}
+
+
+.errorMessage {
+  color: #ff4d4d;
+  font-size: 0.85rem;
+}
+
+.registerLink {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.registerLink a {
+  color: #5b3e81;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.title {
+  color: #5b3e81;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  text-align: center; /* توسيط كلمة مرحباً */
+  width: 100%;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 25px;
+  text-align: center; /* توسيط جملة مواصلة تسجيل الدخول */
+  width: 100%;
+}
+
+
+
+

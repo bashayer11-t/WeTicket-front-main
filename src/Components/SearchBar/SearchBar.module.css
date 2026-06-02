@@ -1,0 +1,51 @@
+.heroContainer {
+    width: 100%;
+    height: 450px; /* تقدري تزيديه حسب رغبتك */
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px; /* عشان يعطي الشكل المنحني اللي في تصميمك */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* طبقة خفيفة عشان يبرز مربع البحث */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchWrapper {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 18px 30px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    direction: ltr; /* لأن الـ Placeholder بالانجليزي في تصميمك */
+}
+
+.searchIcon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #888;
+}

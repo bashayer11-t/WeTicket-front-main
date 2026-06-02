@@ -1,0 +1,94 @@
+.page-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    min-height: 80vh;
+    align-items: center;
+    background-color: transparent;
+}
+
+.customTitle {
+    color: var(--primary-color) !important;
+    font-weight: 600 !important;
+    font-size: 1.25rem !important;
+}
+
+.add-event-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.inputGroup {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.label {
+    color: #5b3e81; 
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-right: 15px;
+}
+
+.buttonWrapper {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.submitBtn {
+    background-color: #5b3e81;
+    color: white;
+    padding: 10px 60px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.submitBtn:hover { transform: scale(1.05); }
+
+:global(.form-card) {
+    max-width: 450px !important; 
+    padding: 30px !important;
+}
+
+/* تنسيق حقول الإدخال لتشمل حقل التاريخ */
+.inputGroup input[type="date"] {
+    width: 100%;
+    height: 44px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 0 20px;
+    color: #5b3e81;
+    font-family: inherit;
+    outline: none;
+}
+
+/* تنسيق الـ Dropdowns (الحالة وحالة الدفع) */
+.page-wrapper select {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%235b3e81' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: left 20px center !important; 
+    
+    width: 100%;
+    height: 44px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important; 
+    padding-right: 20px !important; 
+    padding-left: 40px !important; 
+    background-color: #ffffff;
+    box-shadow: inset -1px -1px 5px #f9f9f9;
+    color: #5b3e81;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,102 @@
+.registerPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  direction: rtl;
+}
+
+.registerCard {
+  display: flex;
+  width: 950px; /* زيادة العرض قليلاً للراحة */
+  height: 650px; /* زيادة الارتفاع لاستيعاب حقل الجوال */
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.imageSection {
+  flex: 1.1;
+  height: 100%;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.formSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 40px;
+}
+
+.title {
+  color: #5b3e81;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* تقليل المسافة لتناسب الحقول الكثيرة */
+}
+
+.errorMessage {
+  color: #ff4d4d;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.registerBtn {
+  background-color: #5b3e81;
+  color: white;
+  border: none;
+  height: 48px; /* ارتفاع ثابت ومتناسق مع تصميمك */
+  border-radius: 999px; /* Pill shape */
+  cursor: pointer;
+  width: 60%; /* تقليل العرض بناءً على طلبك السابق */
+  margin: 10px auto 0;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(91, 62, 129, 0.2);
+}
+
+.registerBtn:hover:not(:disabled) {
+  background-color: #4a326a;
+  transform: translateY(-2px);
+}
+
+.registerBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.loginLink {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.loginLink a {
+  color: #5b3e81;
+  text-decoration: none;
+  font-weight: bold;
+}

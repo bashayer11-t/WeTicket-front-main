@@ -1,0 +1,63 @@
+/* داخل Card.module.css */
+.cardContainer {
+    width: 100%;
+    height: 100%; /* ليأخذ كامل ارتفاع الـ Grid */
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.imageWrapper {
+    width: 100%;
+    aspect-ratio: 16 / 10; /* يثبت أبعاد الصورة مهما كان حجم الملف الأصلي */
+    overflow: hidden;
+}
+
+.imageWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يملأ المساحة بدون تمطيط الصورة */
+}
+
+.cardContent {
+    padding: 15px;
+    text-align: right;
+    flex-grow: 1; /* لضمان توزيع المساحة بالتساوي */
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 25px; /* حواف ناعمة تشبه تصاميمك */
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* تثبيت ارتفاع الصورة في كل الكروت */
+  object-fit: cover; /* أهم خاصية: تجعل الصورة تغطي المساحة بدون تمطيط */
+}
+.cardBody p {
+  /* اختاري اللون الذي يناسبك، مثلاً الرمادي أو لون الهوية */
+  color: #7f8c8d; 
+  font-size: 14px;
+  margin-top: 5px;
+  padding-right: 20px;
+  text-align: right; 
+}
+
+.cardBody h3 {
+  color: var(--primary-color); /* لون العنوان الرئيسي */
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  text-align: right; 
+}

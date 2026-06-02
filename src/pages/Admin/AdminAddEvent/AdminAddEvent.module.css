@@ -1,0 +1,84 @@
+.page-wrapper {
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* 1. كسر الـ Max Width الخاص بـ FormModel بشكل إجباري */
+#full-width-container :global(.form-card), 
+#full-width-container :global(.formModel-container), 
+#full-width-container :global(div[class*="FormModel"]),
+#full-width-container > div {
+    width: 100% !important;
+    max-width: 100% !important; /* إلغاء الـ 500px أو 600px الثابتة */
+    min-width: 100% !important;
+    margin: 0 !important;
+    border-radius: 20px !important;
+}
+
+/* 2. توزيع الحقول لتملأ العرض الجديد */
+.add-event-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 أعمدة متساوية */
+    gap: 25px;
+    width: 100%;
+}
+
+.inputGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: right;
+}
+
+/* 3. جعل الحقول طويلة (Width) وفخمة (Height) */
+.inputGroup :global(input),
+.inputGroup :global(select),
+.inputGroup input {
+    width: 100% !important;
+    height: 55px !important;
+    border-radius: 30px !important;
+    padding: 0 20px !important;
+    border: 1px solid #e2e8f0 !important;
+    background-color: #fcfcfc !important;
+    box-sizing: border-box !important;
+}
+
+.label {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+
+
+.customTitle {
+    color: var(--primary-color) !important;
+    font-weight: 600 !important;
+    font-size: 1.25rem !important;
+}
+
+.submitBtn {
+    background-color: #5b3e81;
+    color: white;
+    padding: 10px 60px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.submitBtn:hover { transform: scale(1.05); }
+
+

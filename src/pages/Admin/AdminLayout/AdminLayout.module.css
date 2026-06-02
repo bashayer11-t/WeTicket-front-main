@@ -1,0 +1,64 @@
+.layoutContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    direction: ltr; /* السايد بار يبدأ من اليسار */
+    background-color: var(--background-color);
+}
+
+.bodyWrapper {
+    display: flex;
+    flex: 1; /* ليمتد ليملأ المساحة المتبقية تحت الهيدر */
+    overflow: hidden;
+    padding-top: 15px;
+}
+
+    .mainWrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* إضافة حدود يسارية لضمان عدم تداخل الهيدر مع انحناء السايد بار */
+    border-right: 1px solid rgba(0,0,0,0.03); 
+    background-color: #f8f9fa; /* خلفية رمادية خفيفة للمحتوى لتمييزه عن السايد بار الأبيض */
+}
+
+.contentArea {
+    flex: 1;
+    padding: 0 20px; /* مساحة مريحة للمحتوى */
+    direction: rtl; 
+    background-color: var(--background-color);
+    overflow-y: auto;
+}
+.neo-select {
+    width: 100%;
+    height: 48px;
+    padding: 10px 20px 10px 45px; /* مسافة داخلية (يمين) لإبعاد النص عن الحافة */
+    border-radius: 30px;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: inset -2px -2px 8px #e0e0e0, inset 2px 2px 8px #ffffff;
+    appearance: none; /* إخفاء السهم الافتراضي للمتصفح */
+    
+    /* إضافة سهم مخصص وتحريكه للداخل */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%235b3e81' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    /* التحريك للداخل: وضعه على بعد 20px من اليمين بدلاً من الطرف */
+    background-position: calc(100% - 20px) center; 
+    
+    color: #5b3e81;
+    cursor: pointer;
+    outline: none;
+}
+
+/* استهداف العنوان الممرر عبر الـ prop title في FormModel */
+.page-wrapper :global(.form-title) {
+    color: #5b3e81 !important; /* اللون الموف الأساسي */
+    font-weight: bold !important;
+    font-size: 1.4rem !important;
+}
+
+.sidebar {
+   padding-left: 20px; /* مسافة من اليسار لتتماشى مع الهيدر */
+   display: flex;
+}
